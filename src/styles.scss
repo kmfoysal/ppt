@@ -1,1 +1,67 @@
 /* You can add global styles to this file, and also import other style files */
+
+@font-face {
+  font-family: "gilory";
+  src: url("./assets/fonts/Gilroy-Bold.ttf") format("truetype");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "gilory";
+  src: url("./assets/fonts/Gilroy-Light.ttf") format("truetype");
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: "gilory";
+  src: url("./assets/fonts/Gilroy-Medium.ttf") format("truetype");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "gilory";
+  src: url("./assets/fonts/Gilroy-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "gilory";
+  src: url("./assets/fonts/Gilroy-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+}
+
+body {
+  background-color: #f1f3f9;
+  font-family: gilory;
+}
+
+.access-btn {
+  background-color: #2878f0;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  color: #ffffff;
+  border-radius: 8px;
+  width: 162px;
+  height: 52px;
+  padding: 17px 30px;
+
+  &:hover {
+    background-color: #68dbba;
+    color: #ffffff;
+  }
+}
+
+.blue-text {
+  color: #2878f0;
+}
+
+.yellow-text {
+  color: #ffda00;
+}
+
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1210px;
+  }
+}

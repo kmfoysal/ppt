@@ -44,7 +44,7 @@ body {
   border-radius: 8px;
   width: 162px;
   height: 52px;
-  padding: 17px 30px;
+  // padding: 17px 30px;
 
   &:hover {
     background-color: #68dbba;
@@ -60,8 +60,45 @@ body {
   color: #ffda00;
 }
 
+button {
+  &:focus {
+    outline: none !important;
+    box-shadow: none !important;
+  }
+}
+
+.section-padding {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (max-width: 991px) {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  @media (max-width: 576px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+@media (max-width: 991px) {
+  .buy-today-section {
+    background-position: 75%;
+  }
+}
+
+@media (max-width: 576px) {
+  .buy-today-section {
+    background-position: 0%;
+  }
+}
+
 @media (min-width: 1400px) {
   .container {
-    max-width: 1210px;
+    max-width: 1200px;
   }
 }

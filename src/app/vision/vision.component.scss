@@ -7,13 +7,26 @@
   background-size: auto;
   background-position: 330px 50px, 80% 50px;
 
+  @media (max-width: 575px) {
+    padding: 50px 0;
+  }
+
   .text-box {
+    @media (max-width: 575px) {
+      margin-bottom: 30px;
+    }
     h3 {
       font-weight: Bold;
       font-size: 36px;
       line-height: 48px;
       margin-bottom: 30px;
       width: 89%;
+
+      @media (max-width: 575px) {
+        font-size: 24px;
+        line-height: 30px;
+        width: 100%;
+      }
     }
     p {
       font-size: 16px;
